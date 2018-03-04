@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, AfterViewInit, ElementRef } from '@angula
 
 import { Ingredient } from '../shared/ingredient.model';
 import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
-import { IngredientService } from './ingredient.service';
+import { ShoppingListService } from './shopping-list.service';
 
 @Component({
   selector: 'app-shopping-list',
@@ -14,10 +14,10 @@ export class ShoppingListComponent implements OnInit {
   ingredientName: string = '';
   ingredientAmount: number;
 
-  constructor(private ingService: IngredientService) { }
+  constructor(private shoppingListService: ShoppingListService) { }
 
   ngOnInit() {
-    this.ingredients = this.ingService.ingredients;
+    this.ingredients = this.shoppingListService.ingredients;
   }
 
   onIngredientAdded(ingredient: Ingredient){
