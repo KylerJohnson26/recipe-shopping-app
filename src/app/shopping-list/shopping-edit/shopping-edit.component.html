@@ -8,8 +8,7 @@
             type="text" 
             id="name" 
             class="form-control"
-            [value]="nameInput"
-            (input)="nameInput = $event.target.value">
+            #nameInput>
         </div>
         <div class="col-sm-2 form-group">
           <label for="amount">Amount</label>
@@ -17,8 +16,7 @@
             type="number"
             id="amount" 
             class="form-control"
-            [value]="amountInput"
-            (input)="amountInput = $event.target.value">
+            #amountInput>
         </div>
       </div>
       <div class="row">
@@ -26,7 +24,7 @@
             <button 
               type="button" 
               class="btn btn-success"
-              (click)="onAddIngredient()">
+              (click)="onAddItem()">
               Add
             </button>
             <button type="button" class="btn btn-danger">Delete</button>            
