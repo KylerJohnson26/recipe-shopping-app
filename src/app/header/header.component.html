@@ -13,25 +13,23 @@
           routerLinkActive="active"
           [routerLinkActiveOptions]="{exact: true}">
           <a 
-            routerLink="/"
-            (click)="onSelect('recipe')">
+            routerLink="/recipes">
             Recipes
           </a>
         </li>
         <li routerLinkActive="active">
           <a 
-            routerLink="/shopping_list"
-            (click)="onSelect('shoppingList')">
+            routerLink="/shopping_list">
             Shopping List
           </a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Manage <span class="caret"></span></a>
+          <a class="dropdown-toggle">Manage <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Save Data</a></li>
-            <li><a href="#">Fetch Data</a></li>
+            <li><a>Save Data</a></li>
+            <li><a>Fetch Data</a></li>
           </ul>
         </li>
       </ul>
