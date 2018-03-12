@@ -1,5 +1,7 @@
 # RecipeShoppingApp
 
+A web app to make managing recipes, sharing them, and maintaining a grocery shopping list easy. 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.7.
 
 ## Development server
