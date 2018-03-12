@@ -15,7 +15,6 @@ import { DropdownDirective } from './shared/dropdown.directive';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
 import { RecipeService } from './recipes/recipes-list/recipe.service';
 import { AppRoutingModule } from './app-routing.module';
-import { RecipeDetailResolverService } from './recipes/recipe-detail/recipe-detail-resolver.service';
 import { SelectRecipeComponent } from './recipes/select-recipe/select-recipe.component';
 
 @NgModule({
@@ -35,7 +34,7 @@ import { SelectRecipeComponent } from './recipes/select-recipe/select-recipe.com
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [ShoppingListService, RecipeService, RecipeDetailResolverService],
+  providers: [ShoppingListService, RecipeService],
   bootstrap: [
     AppComponent, 
   ]
